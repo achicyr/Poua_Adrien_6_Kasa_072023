@@ -1,0 +1,25 @@
+@import "../../assets/Resets.module.scss";
+
+.container {
+  @include fonts(18px, 500, white);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px;
+  gap: 50px;
+}
+
+.item {
+  background: linear-gradient(map-get($clr, primary), #803131);
+  display: flex;
+  justify-self: center;
+  aspect-ratio: 1;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.title {
+  align-self: self-end;
+  max-width: 70%;
+}

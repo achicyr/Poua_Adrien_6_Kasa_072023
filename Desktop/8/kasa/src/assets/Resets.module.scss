@@ -1,0 +1,47 @@
+$clr: (
+  primary: #ff6060,
+  secondary: #f6f6f6,
+);
+
+
+@mixin layout() {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+@mixin test(){
+  background-color:  blue;
+  border : yellow
+}
+$ff: "Montserrat";
+
+@mixin fonts($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  font-family: $ff;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

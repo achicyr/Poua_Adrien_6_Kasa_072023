@@ -1,0 +1,14 @@
+@import '../../assets/Resets.module.scss';
+
+.container {
+  color:white;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap : 1rem;
+  }
+  .logo__wrapper{
+    font-size: 48px;
+    margin-top: 10px;;
+  }
+}

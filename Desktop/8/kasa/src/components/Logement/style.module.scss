@@ -1,0 +1,80 @@
+@import "../../assets/Resets.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-weight: 500;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  .left {
+    max-width: 50%;
+  }
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .host {
+      @include fonts(18px, 500, inherit);
+      display: flex;
+      gap: 10px;
+    }
+  }
+  &__top {
+    color: map-get($clr, primary);
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    & > * {
+      width: 48%;
+      & > :last-child {
+        flex-grow: 1;
+        font-size: 18px;
+        line-height: 2em;
+      }
+    }
+  }
+  .host__avatar {
+    height: 64px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .wrapper__tags {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.location {
+  font-size: 22px;
+}
+.host__Name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tag {
+  display: flex;
+  align-items: center;
+  @include fonts(14px, 500, white);
+  background-color: map-get($clr, primary);
+  padding: 0.3em 2em;
+  border-radius: 1em;
+}
+.star {
+  font-size: 42px;
+}
+.filledStar {
+  color: red;
+}
+.emptyStar {
+  color: map-get($clr, secondary);
+}

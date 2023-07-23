@@ -1,0 +1,25 @@
+@import "../../assets/Resets.module.scss";
+
+header {
+  @include layout;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 50px;
+  gap : 30px;
+  border-radius: 25px;
+  background-color: white;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: auto;
+  background-color: black;
+  padding: 30px 0px;
+}
